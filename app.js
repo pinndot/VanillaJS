@@ -1,5 +1,5 @@
 const a = 5;
-var b = 2;
+let b = 2;
 
 console.log(a + b);
 b = b + 1;
