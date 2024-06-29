@@ -1,7 +1,27 @@
-const a = 5;
-let b = 2;
+const playerName = "nico";
+const playerPoints = 121212;
+const playerHandsome = false;
+const playerFat = "little bit";
 
-console.log(a + b);
-b = b + 1;
-console.log(a * b);
-console.log(a / b);
+// const player = ["nico", 121212, false, "little bit"];
+
+const player = {
+    name: "nico",
+    points: 121212,
+    handsome: false,
+    fat: "little bit",
+    poo: undefined,
+};
+
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
+
+// Modify Object
+player.handsome = true;
+player.poo = "Big";
+console.log(player);
+
+// Add Object
+player.lastName = "potato";
+console.log(player);
