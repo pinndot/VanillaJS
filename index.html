@@ -3,32 +3,60 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <title>Momemtum</title>
     </head>
     <body>
-        <form id="login-form" class="hidden">
-            <input
-                required
-                maxlength="15"
-                type="text"
-                placeholder="What is your name?"
-            />
-            <button>Log In</button>
-        </form>
-        <h2 id="clock">00:00:00</h2>
-        <h1 id="greeting" class="hidden"></h1>
-        <form id="todo-form">
-            <input
-                type="text"
-                placeholder="Write a To Do and Press Enter"
-                required
-            />
-        </form>
-        <ul id="todo-list"></ul>
-        <div id="quote">
-            <span></span>
-            <span></span>
+        <div class="container">
+            <form id="login-form" class="hidden">
+                <input
+                    required
+                    maxlength="15"
+                    type="text"
+                    placeholder="What is your name?"
+                />
+                <button>Log In</button>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <div class="card">
+                <h2 id="clock" class="card-title">00:00:00</h2>
+                <!-- <h1 id="greeting" class="hidden"></h1> -->
+                <form
+                    id="todo-form"
+                    style="
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 20px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        border: 1px solid #ccc;
+                    "
+                >
+                    <input
+                        type="text"
+                        placeholder="Write a To Do and Press Enter"
+                        required
+                    />
+                </form>
+                <ul
+                    id="todo-list"
+                    style="
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 10px;
+                        list-style-type: none;
+                        padding: 0;
+                    "
+                ></ul>
+                <div id="quote" class="card-text">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
         <script src="js/greetings.js"></script>
         <script src="js/clock.js"></script>

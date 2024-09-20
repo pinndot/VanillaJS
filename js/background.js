@@ -2,10 +2,11 @@ const images = ["0.jpg", "1.jpg", "2.jpg"];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImange = document.createElement("img");
+const bgImage = document.createElement("img");
 
-bgImange.src = `img/${chosenImage}`;
+bgImage.src = `img/${chosenImage}`;
+bgImage.classList.add("bg-image");
 
-document.body.appendChild(bgImange);
+document.body.appendChild(bgImage);
 
-// console.log(bgImange);
+// console.log(bgImage);
