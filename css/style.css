@@ -35,7 +35,7 @@ body {
     border-radius: 30px;
     text-align: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -51,6 +51,17 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     border-radius: 5px;
+}
+
+#weather {
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #login-form {
@@ -69,6 +80,9 @@ body {
     margin-bottom: 20px;
     text-align: center;
     outline: none;
+    &::placeholder {
+        color: white;
+    }
 }
 
 #login-form button {
@@ -79,6 +93,7 @@ body {
     font-size: 40px;
     cursor: pointer;
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hidden {
@@ -117,7 +132,6 @@ body {
 
 #todo-list li button {
     background-color: lightsalmon;
-    /* background-color: #dc3545; */
     border: none;
     color: white;
     padding: 5px 10px;
